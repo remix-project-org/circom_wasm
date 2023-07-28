@@ -8,3 +8,4 @@ import('./circom_wasm_bg.wasm')
     console.error('Error importing `circom_wasm_bg.wasm`:', e)
   })
 export * from "./circom_wasm_bg.js"
+export * from "./generate_witness.js"
