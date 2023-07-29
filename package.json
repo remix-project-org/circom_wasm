@@ -17,7 +17,7 @@
   "types": "./v2.1.5/circom_wasm.d.ts",
   "keywords": [
     "zkproofs",
-    "zksanrks",
+    "zksnarks",
     "circuits",
     "compiler"
   ]
