@@ -26,3 +26,18 @@ export function generate_r1cs(file_name: string, sources: any, config: any): Uin
 * @returns {Uint8Array}
 */
 export function generate_witness(wasm_build: any, input: string): Uint8Array;
+/**
+ * Compiler lists info
+ */
+export const compiler_list: {
+    latest: string;
+    license: string;
+    wasm_builds: {
+        [key: string]: {
+            name: string;
+            version: string;
+            repo: string;
+            build_source: string;
+        };
+    };
+}
