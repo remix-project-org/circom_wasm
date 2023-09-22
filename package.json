@@ -10,7 +10,6 @@
   "main": "./index.js",
   "exports": {
     ".": "./index.js",
-    "./list": "./list.json",
     "./v2.1.5": "./v2.1.5/index.js"
   },
   "module": "index.js",
