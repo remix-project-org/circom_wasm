@@ -1,5 +1,6 @@
 {
     "latest": "2.1.5",
+    "versions": ["2.1.5"],
     "license": "https://raw.githubusercontent.com/ioedeveloper/circom_wasm/main/LICENSE",
     "wasm_builds": {
         "2.1.5": {
