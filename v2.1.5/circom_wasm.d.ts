@@ -31,6 +31,7 @@ export function generate_witness(wasm_build: any, input: string): Uint8Array;
  */
 export const compiler_list: {
     latest: string;
+    versions: string[];
     license: string;
     wasm_builds: {
         [key: string]: {
