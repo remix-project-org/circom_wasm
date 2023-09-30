@@ -1,7 +1,11 @@
 /* tslint:disable */
 /* eslint-disable */
 export const memory: WebAssembly.Memory;
-export function compile(a: number, b: number, c: number, d: number, e: number): void;
+export function __wbg_compilationresult_free(a: number): void;
+export function compilationresult_program(a: number): number;
+export function compilationresult_input_signals(a: number, b: number, c: number): number;
+export function compilationresult_report(a: number): number;
+export function compile(a: number, b: number, c: number, d: number): number;
 export function parse(a: number, b: number, c: number, d: number): void;
 export function generate_r1cs(a: number, b: number, c: number, d: number, e: number): void;
 export function __wbindgen_malloc(a: number, b: number): number;
