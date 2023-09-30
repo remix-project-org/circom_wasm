@@ -4,9 +4,9 @@
 * @param {string} file_name
 * @param {any} sources
 * @param {any} config
-* @returns {Uint8Array}
+* @returns {CompilationResult}
 */
-export function compile(file_name: string, sources: any, config: any): Uint8Array;
+export function compile(file_name: string, sources: any, config: any): CompilationResult;
 /**
 * @param {string} file_name
 * @param {any} sources
@@ -21,11 +21,24 @@ export function parse(file_name: string, sources: any): string;
 */
 export function generate_r1cs(file_name: string, sources: any, config: any): Uint8Array;
 /**
-* @param {any} wasm_build
-* @param {string} input
+*/
+export class CompilationResult {
+  free(): void;
+/**
 * @returns {Uint8Array}
 */
-export function generate_witness(wasm_build: any, input: string): Uint8Array;
+  program(): Uint8Array;
+/**
+* @param {string} name
+* @returns {Array<any>}
+*/
+  input_signals(name: string): Array<any>;
+/**
+* @returns {any}
+*/
+  report(): any;
+}
+
 /**
  * Compiler lists info
  */
