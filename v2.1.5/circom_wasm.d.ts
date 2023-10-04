@@ -68,3 +68,10 @@ export const compiler_list: {
       };
   };
 }
+
+/**
+* @param {any} wasm_build
+* @param {string} input
+* @returns {Uint8Array}
+*/
+export function generate_witness(wasm_build: any, input: string): Uint8Array;
