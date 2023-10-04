@@ -17,9 +17,9 @@ export function parse(file_name: string, sources: any): string;
 * @param {string} file_name
 * @param {any} sources
 * @param {any} config
-* @returns {Uint8Array}
+* @returns {R1csResult}
 */
-export function generate_r1cs(file_name: string, sources: any, config: any): Uint8Array;
+export function generate_r1cs(file_name: string, sources: any, config: any): R1csResult;
 /**
 */
 export class CompilationResult {
@@ -38,20 +38,33 @@ export class CompilationResult {
 */
   report(): any;
 }
+/**
+*/
+export class R1csResult {
+  free(): void;
+/**
+* @returns {Uint8Array}
+*/
+  program(): Uint8Array;
+/**
+* @returns {any}
+*/
+  report(): any;
+}
 
 /**
  * Compiler lists info
  */
 export const compiler_list: {
-    latest: string;
-    versions: string[];
-    license: string;
-    wasm_builds: {
-        [key: string]: {
-            name: string;
-            version: string;
-            repo: string;
-            build_source: string;
-        };
-    };
+  latest: string;
+  versions: string[];
+  license: string;
+  wasm_builds: {
+      [key: string]: {
+          name: string;
+          version: string;
+          repo: string;
+          build_source: string;
+      };
+  };
 }
