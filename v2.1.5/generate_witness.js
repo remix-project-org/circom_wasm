@@ -11,6 +11,8 @@ export function generate_witness (wasm_build, input) {
             const buff= await witnessCalculator.calculateWTNSBin(input,0);
 
             resolve(buff);
+        }).catch(err => {
+            reject(err);
         });
     });
 }
