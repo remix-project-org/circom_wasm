@@ -10,9 +10,9 @@ export function compile(file_name: string, sources: any, config: any): Compilati
 /**
 * @param {string} file_name
 * @param {any} sources
-* @returns {string}
+* @returns {ParseResult}
 */
-export function parse(file_name: string, sources: any): string;
+export function parse(file_name: string, sources: any): ParseResult;
 /**
 * @param {string} file_name
 * @param {any} sources
@@ -37,6 +37,20 @@ export class CompilationResult {
 * @returns {any}
 */
   report(): any;
+}
+/**
+*/
+export class ParseResult {
+  free(): void;
+/**
+* @returns {any}
+*/
+  report(): any;
+/**
+* @param {number} report_id
+* @returns {any}
+*/
+  get_report_name(report_id: number): any;
 }
 /**
 */
