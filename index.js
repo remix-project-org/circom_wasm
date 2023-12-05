@@ -1,4 +1,6 @@
 import listJson from './list.json'
 
 export const compiler_list = Object.assign({}, listJson)
-export * from "./v2.1.5/index.js"
+
+// make 2.1.6 the default
+export * from "./v2.1.6/index.js"

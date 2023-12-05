@@ -2,7 +2,7 @@
   "name": "circom_wasm",
   "collaborators": ["ioedeveloper"],
   "description": "circom_wasm is a zkSnark circuit compiler for wasm",
-  "version": "v0.0.0-alpha.7",
+  "version": "v0.2.0-alpha",
   "repository": {
     "type": "git",
     "url": "https://github.com/ioedeveloper/circom_wasm"
@@ -10,11 +10,12 @@
   "main": "./index.js",
   "exports": {
     ".": "./index.js",
-    "./v2.1.5": "./v2.1.5/index.js"
+    "./v2.1.5": "./v2.1.5/index.js",
+    "./v2.1.6": "./v2.1.6/index.js"
   },
   "module": "index.js",
   "homepage": "https://github.com/ioedeveloper/circom_wasm",
-  "types": "./v2.1.5/circom_wasm.d.ts",
+  "types": "./v2.1.6/circom_wasm.d.ts",
   "keywords": [
     "zkproofs",
     "zksnarks",
