@@ -2,7 +2,7 @@
   "name": "circom_wasm",
   "collaborators": ["ioedeveloper"],
   "description": "circom_wasm is a zkSnark circuit compiler for wasm",
-  "version": "v0.2.2-alpha",
+  "version": "v0.2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/ioedeveloper/circom_wasm"
