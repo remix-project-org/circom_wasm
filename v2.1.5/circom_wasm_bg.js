@@ -279,6 +279,13 @@ export class CompilationResult {
         const ret = wasm.compilationresult_report(this.__wbg_ptr);
         return takeObject(ret);
     }
+    /**
+    * @returns {Array<any>}
+    */
+    log() {
+        const ret = wasm.compilationresult_log(this.__wbg_ptr);
+        return takeObject(ret);
+    }
 }
 /**
 */
@@ -354,6 +361,13 @@ export class R1csResult {
     */
     report() {
         const ret = wasm.r1csresult_report(this.__wbg_ptr);
+        return takeObject(ret);
+    }
+    /**
+    * @returns {Array<any>}
+    */
+    log() {
+        const ret = wasm.r1csresult_log(this.__wbg_ptr);
         return takeObject(ret);
     }
 }
