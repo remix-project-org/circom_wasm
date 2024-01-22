@@ -37,6 +37,10 @@ export class CompilationResult {
 * @returns {any}
 */
   report(): any;
+/**
+* @returns {Array<any>}
+*/
+  log(): Array<any>;
 }
 /**
 */
@@ -64,6 +68,10 @@ export class R1csResult {
 * @returns {any}
 */
   report(): any;
+/**
+* @returns {Array<any>}
+*/
+  log(): Array<any>;
 }
 
 /**
