@@ -279,6 +279,13 @@ export class CompilationResult {
         const ret = wasm.compilationresult_report(this.__wbg_ptr);
         return takeObject(ret);
     }
+    /**
+    * @returns {Array<any>}
+    */
+    log() {
+        const ret = wasm.compilationresult_log(this.__wbg_ptr);
+        return takeObject(ret);
+    }
 }
 /**
 */
@@ -356,6 +363,13 @@ export class R1csResult {
         const ret = wasm.r1csresult_report(this.__wbg_ptr);
         return takeObject(ret);
     }
+    /**
+    * @returns {Array<any>}
+    */
+    log() {
+        const ret = wasm.r1csresult_log(this.__wbg_ptr);
+        return takeObject(ret);
+    }
 }
 
 export function __wbindgen_string_new(arg0, arg1) {
@@ -410,7 +424,7 @@ export function __wbg_instanceof_Object_3daa8298c86298be(arg0) {
     let result;
     try {
         result = getObject(arg0) instanceof Object;
-    } catch {
+    } catch (_) {
         result = false;
     }
     const ret = result;
