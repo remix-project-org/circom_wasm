@@ -2,20 +2,21 @@
   "name": "circom_wasm",
   "collaborators": ["ioedeveloper"],
   "description": "circom_wasm is a zkSnark circuit compiler for wasm",
-  "version": "v0.2.0",
+  "version": "v0.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ioedeveloper/circom_wasm"
+    "url": "https://github.com/remix-project-org/circom_wasm"
   },
   "main": "./index.js",
   "exports": {
     ".": "./index.js",
     "./v2.1.5": "./v2.1.5/index.js",
-    "./v2.1.6": "./v2.1.6/index.js"
+    "./v2.1.6": "./v2.1.6/index.js",
+    "./v2.1.7": "./v2.1.7/index.js"
   },
   "module": "index.js",
-  "homepage": "https://github.com/ioedeveloper/circom_wasm",
-  "types": "./v2.1.6/index.d.ts",
+  "homepage": "https://github.com/remix-project-org/circom_wasm",
+  "types": "./v2.1.7/index.d.ts",
   "keywords": [
     "zkproofs",
     "zksnarks",
