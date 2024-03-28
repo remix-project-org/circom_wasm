@@ -1,6 +1,6 @@
 {
-    "latest": "2.1.7",
-    "versions": ["2.1.5", "2.1.6", "2.1.7"],
+    "latest": "2.1.8",
+    "versions": ["2.1.5", "2.1.6", "2.1.7", "2.1.8"],
     "license": "https://raw.githubusercontent.com/remix-project-org/circom_wasm/main/LICENSE",
     "wasm_builds": {
         "2.1.5": {
@@ -20,6 +20,12 @@
             "version": "2.1.7",
             "repo": "https://github.com/remix-project-org/circom_wasm/tree/main/v2.1.7",
             "build_source": "https://github.com/remix-project-org/circom/tree/v2.1.7_wasm"
+        },
+        "2.1.8": {
+            "name": "v2.1.8 wasm",
+            "version": "2.1.8",
+            "repo": "https://github.com/remix-project-org/circom_wasm/tree/main/v2.1.8",
+            "build_source": "https://github.com/remix-project-org/circom/tree/v2.1.8_wasm"
         }
     }
 }
